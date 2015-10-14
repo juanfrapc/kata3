@@ -37,7 +37,7 @@ public class HistogramDisplay extends ApplicationFrame{
         DefaultCategoryDataset dataset = new DefaultCategoryDataset();
         
         for (Object key :histogram.keySet()) {
-            dataset.addValue(histogram.get(key),"",key);           
+            dataset.addValue(histogram.get(key),"",key.toString());           
         }
         
         
